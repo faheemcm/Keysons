@@ -1,0 +1,415 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+
+@font-face {
+    font-family: 'poppins-bold';
+    src: url('../fonts/poppins/poppins-bold-webfont.woff2') format('woff2'),
+         url('../fonts/poppins/poppins-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'poppins-medium';
+    src: url('../fonts/poppins/poppins-medium-webfont.woff2') format('woff2'),
+         url('../fonts/poppins/poppins-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'poppins';
+    src: url('../fonts/poppins/poppins-regular-webfont.woff2') format('woff2'),
+         url('../fonts/poppins/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'poppins-semibold';
+    src: url('../fonts/poppins/poppins-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/poppins/poppins-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+	font-family: 'poppins', Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #7E7E7E;
+	overflow-x: hidden;
+	min-width: 320px;
+}
+input,textarea,select{
+	font-family: 'poppins', Arial, Helvetica, sans-serif;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: 'poppins', Arial, Helvetica, sans-serif;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1200px;
+}
+a {
+    color: #7E7E7E;
+    transition: 0.3s;
+}
+a:hover {
+    color: #000;
+}
+a.button {
+    padding: 12px 24px;
+    color: #eee;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+a.button:hover {
+    background: #eee;
+    color: #000;
+
+}
+:root {
+   --blue: #237FC1;
+   --green: #089348;
+   --red: #E11616;
+}
+
+header {
+    height: 100px;
+    padding-top: 24px;
+}
+header .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1 {
+    width: 120px;
+    display: block;
+}
+header h1 a {}
+header h1 a img {
+    width: 100%;
+}
+header ul.nav {
+    display: flex;
+    align-items: center;
+}
+header ul.nav li {
+    margin-right: 32px;
+}
+header ul.nav li a {
+    font-size: 14px;
+}
+header ul.social {
+    display: flex;
+    align-items: center;
+}
+header ul.social li {
+    width: 24px;
+    display: block;
+    margin-right: 18px;
+}
+header ul.social li a {
+    opacity: 0.5;
+}
+header ul.social li a:hover {
+    opacity: 1;
+}
+header ul.social li a img {
+    width: 100%;
+}
+
+#spotlight {
+    height: calc(100vh  100px);
+    background-image: url("../images/spotlight-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#spotlight div.gradient {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, rgba(188, 117, 40, 0.9) 40%, rgba(0,0,0,0) 100%);;
+}
+#spotlight .wrapper {
+}
+#spotlight div.content {
+    padding: 185px 0;
+    z-index: 10;
+}
+#spotlight div.content h1 {
+    font-family: 'poppins-bold';
+    font-size: 48px;
+    margin-bottom: 24px;
+    color: #fff;
+}
+#spotlight div.content p {
+    width: 70%;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+#spotlight div.content a.button:hover {
+    color: #bc7528;
+}
+
+
+
+.company {
+    margin: 80px 0 180px; 
+
+}
+.company .wrapper {
+    width: 75%;
+}
+.company div.container {
+    position: relative;
+}
+.company div.container div.image {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+}
+.company div.container div.image div.ovarley {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.5;
+}
+div.ovarley.blue {
+    background: var(--blue);
+}
+div.ovarley.green {
+    background: var(--green);
+}
+div.ovarley.red {
+    background: var(--red);
+}
+.company div.container div.image img {
+    width: 100%;
+}
+.company div.container div.content {
+    width: 45%;
+    padding: 32px;
+    padding-bottom: 40px;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    top: 45%;
+}
+.company div.container div.content h2 {
+    height: 60px;
+    display: block;
+    margin-bottom: 24px;
+}
+.company div.container div.content h2 img {
+    height: 100%;
+}
+.company div.container div.content p {
+    font-size: 14px;
+    margin-bottom: 40px; 
+}
+#pharma div.container div.content a.button {
+    border-color: var(--blue);
+    color: var(--blue);
+}
+#pharma div.container div.content a.button:hover {
+    background: var(--blue);
+    color: #fff;
+}
+
+#enterprise div.container div.image {
+    margin-right: auto;
+    margin-left: 0;
+}
+#enterprise div.container div.content {
+    right: 0;
+}
+#enterprise div.container div.content a.button {
+    border-color: var(--green);
+    color: var(--green);
+}
+#enterprise div.container div.content a.button:hover {
+    background: var(--green);
+    color: #fff;
+}
+
+#m-co div.container div.content a.button {
+    border-color: var(--red);
+    color: var(--red);
+}
+#m-co div.container div.content a.button:hover {
+    background: var(--red);
+    color: #fff;
+}
+
+
+#contact {
+    margin: 120px 0;
+}
+#contact .wrapper {
+    background: rgba(35, 127, 193, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24px;
+    overflow: hidden;
+}
+#contact div.left {
+    width: 50%;
+    padding: 24px;
+    padding-left: 60px;
+}
+#contact div.left h3 {
+    font-family: 'poppins-semibold';
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 12px;
+}
+#contact div.left p {
+    font-size: 14px;
+    width: 90%;
+    margin-bottom: 24px;
+    color: #4a5d6c;
+}
+#contact div.left ul {}
+#contact div.left ul li {
+    margin-bottom: 20px;
+}
+#contact div.left ul li span.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+#contact div.left ul li span.title img.icon {
+    margin-right: 12px;
+}
+#contact div.left ul li span.title h5 {
+    font-family: 'poppins-semibold';
+    font-size: 14px;
+    color: #000;
+}
+#contact div.left ul li span.data {
+    display: block;
+    padding-left: 24px;
+}
+#contact div.left ul li span.data p {
+    font-size: 14px;
+    color: #4a5d6c;
+    margin-bottom: 0;
+}
+#contact div.right {
+    width: 50%;
+}
+#contact div.right iframe {
+    width: 100%;
+}
+
+footer {
+    background: #010a10;
+}
+footer .wrapper {
+    padding: 80px 0 0;
+}
+footer .top {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+footer div.info {
+    width: 40%;
+}
+footer div.info h1.logo {
+    width: 120px;
+    margin-bottom: 24px;
+}
+footer div.info h1.logo img {
+    display: block;
+    width: 100%;
+}
+footer div.info p {
+    font-size: 14px;
+    width: 90%;
+}
+footer ul.links {
+    width: 20%;
+}
+footer ul.contacts {
+    width: 20%;
+}
+footer ul {
+}
+footer ul li.head {
+    margin-bottom: 24px;
+}
+footer ul li.head h6 {
+    font-size: 20px;
+    font-family: 'poppins-semibold';
+    color: #fff;
+}
+footer ul li.link {
+    margin-bottom: 12px;
+}
+footer ul li.link a {}
+footer ul li.link a:hover {
+    color: #fff;
+}
+footer ul li.social {
+    display: flex;
+    align-items: center;
+}
+footer ul li.social a {
+    width: 24px;
+    margin-right: 12px;
+}
+footer ul li.social a img {
+    width: 100%;
+    display: block;
+    filter: invert(100%);
+    opacity: 0.5;
+    transition: 0.3s;
+}
+footer ul li.social a:hover img {
+    opacity: 1;
+}
+footer hr {
+    border-bottom: 1px solid #eee;
+    width: 100%;
+}
+footer .bottom {
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer span p {
+    font-size: 14px;
+}
+footer span a:hover {
+    color: #fff;
+}
