@@ -269,7 +269,7 @@ div.ovarley.red {
 
 
 #contact {
-    margin: 120px 0;
+    margin: 200px 0 120px;
 }
 #contact .wrapper {
     background: rgba(35, 127, 193, 0.1);
@@ -356,13 +356,9 @@ footer div.info p {
     font-size: 14px;
     width: 90%;
 }
-footer ul.links {
-    width: 20%;
-}
-footer ul.contacts {
-    width: 20%;
-}
 footer ul {
+    width: 20%;
+
 }
 footer ul li.head {
     margin-bottom: 24px;
@@ -412,4 +408,160 @@ footer span p {
 }
 footer span a:hover {
     color: #fff;
+}
+
+@media all and (max-width: 1280px) {
+    .company div.container div.content {
+        top: 20%;
+        width: 55%;
+    }
+}
+@media all and (max-width: 980px) {
+    header ul.nav {
+        display: none;
+    }
+    .company div.container div.image {
+        width: 100%;
+        border-radius: 24px 24px 0 0;
+    }
+    .company div.container div.content {
+        position: relative;
+        width: 100%;
+        border-radius: 0 0 24px 24px;
+    }
+}
+@media all and (max-width: 860px) {
+    header h1 {
+        width: 100px;
+    }
+
+    #spotlight div.content p {
+        width: 100%;
+    }
+    #spotlight div.gradient {
+        background-image: none;
+        background: rgba(188, 117, 40, 0.8);
+    }
+    .company {
+        margin: 80px 0; 
+    
+    }
+    #contact {
+        margin: 120px 0;
+    }
+     #contact .wrapper {
+        display: block;
+    }
+    #contact div.left {
+        width: 100%;
+        text-align: center;
+    }
+    #contact div.right {
+        width: 100%;
+        height: 300px;
+    }
+    #contact div.left ul {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        text-align: left;
+    }
+    #contact div.left ul li {
+        width: 30%;
+    }
+    footer .top {
+        flex-wrap: wrap;
+    }
+    footer div.info {
+        width: 60%;
+    }
+    footer ul{
+        width: 40%;
+    }
+}
+@media all and (max-width: 768px) {
+    a.button {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+    .company div.container div.content h2 {
+        height: 40px;
+    }
+    #contact div.left {
+        padding-left: 24px;
+    }
+    #contact div.left ul {
+        flex-wrap: wrap;
+    }
+    #contact div.left ul li {
+        width: 50%;
+    }
+    footer div.info {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+}
+@media all and (max-width: 640px) {
+    #spotlight div.content h1 {
+        font-size: 44px;
+    }
+    #spotlight div.content p {
+        font-size: 14px;
+    }
+    .company .wrapper {
+        width: 90%;
+    }
+   
+}
+@media all and (max-width: 480px) {
+    .company div.container div.content {
+        padding: 20px;
+        padding-bottom: 30px;
+    }
+    .company div.container div.content p {
+        font-size: 12px;
+    }
+    footer ul {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    footer div.info h1.logo {
+        width: 80px;
+    }
+    footer div.info p {
+        font-size: 12px;
+    }
+    footer ul li.head h6 {
+        font-size: 16px;
+    }
+    footer ul li.link a {
+        font-size: 14px;
+    }
+    footer ul li.social a {
+        width: 20px;
+    }
+    footer .bottom {
+        display: block;
+        text-align: center;
+    }
+    #contact div.left ul li {
+        width: 100%;
+    }
+    #contact div.left h3 {
+        font-size: 20px;
+    }
+    #contact div.left p {
+        font-size: 12px;
+        width: 100%;
+    }
+}
+@media all and (max-width: 360px) {
+    header h1 {
+        width: 80px;
+    }
+    #spotlight div.content h1 {
+        font-size: 38px;
+    }
+
 }
